@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* =================
+Layout
+================= */
+
+.heading {
+    background: #F8F8F8;
+    padding: 2em 0;
+}
+
+@media (max-width: 725px) {
+    .heading {
+        text-align: center;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 725px) {
+    .container-nav {
+        flex-direction: column;
+    }
+}
+
+/* -- NAVIGATION -- */
+.nav-bar {
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+@media (max-width: 725px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.nav-list-item {
+    margin-left: 2rem;
+}
+
+@media (max-width: 725px) {
+    .nav-list-item  { 
+        margin-bottom: 2em;
+    }
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #707070;
+    padding: .25em 0;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #1792D2;
+}
+
+.current-page {
+    border-bottom: 2px solid #707070;
+}
+
+.current-page:hover {
+    color:#707070;
+}
+
+/* =================
+TYPOGRAPHY
+================= */
+.title {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #143774;
+    margin: 0;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: #1792D2;
+    margin-top: 0;
+}
+
+@media (max-width: 725px) {
+    .subtitle { 
+        margin-bottom: 2em;
+    }
+}
+
+
