@@ -35,6 +35,18 @@ Layout
     }
 }
 
+.container-main {
+    background-color: #fff;
+    padding-top: 4em;
+}
+
+.main-page img {
+    margin-bottom: 2em;
+}
+
+img {
+    max-width: 100%;
+}
 /* -- NAVIGATION -- */
 .nav-bar {
     font-weight: bold;
