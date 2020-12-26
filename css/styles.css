@@ -1,171 +1,167 @@
+/* =================
+GLOBAL STYLES
+================= */
+
 body {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
     color: #707070;
+    font-size: 1.125rem;
+    font-weight: 300;
 }
 
 img {
     max-width: 100%;
+    display: block;
 }
+
+p {
+    margin-top: 0;
+}
+
 /* =================
-Layout
+TYPOGRAPHY
 ================= */
 
-.heading {
-    background: #F8F8F8;
-    padding: 2em 0;
+/* General Typography */
+h1,
+h2,
+h3 {
+    font-family: 'Lora', serif;
+    color: #143774;
+    font-weight: 400;
+    margin-top: 0;
 }
 
-@media (max-width: 725px) {
-    .heading {
-        text-align: center;
-    }
+/* Site logo */
+.title {
+    font-size: 2rem;
+    margin: 1em 0 0 0;
 }
 
-.container {
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto;
+.subtitle {
+    color: #1792D2;
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin: 0 0 2em 0;
 }
 
-.container-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-@media (max-width: 725px) {
-    .container-nav {
-        flex-direction: column;
-    }
-}
-
-/* -- NAVIGATION -- */
-
-.nav-bar {
-    font-weight: bold;
-}
-
+/* Nav */
 .nav-list {
-    list-style: none;
-    display: flex;
+    list-style-type: none;
+    font-size: 1rem;
     padding: 0;
 }
 
-@media (max-width: 725px) {
-    .nav-list {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 .nav-list-item {
-    margin-left: 2rem;
-}
-
-@media (max-width: 725px) {
-    .nav-list-item  { 
-        margin-bottom: 2em;
-    }
+    margin: 0 0 2em 0;
 }
 
 .nav-link {
-    text-decoration: none;
     color: #707070;
-    padding: .25em 0;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-    color: #1792D2;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 .current-page {
-    border-bottom: 2px solid #707070;
+    border-bottom: 2px #707070 solid;
+    padding: 0 0 0.25em 0;
 }
 
-.current-page:hover {
-    color:#707070;
-}
+/* Article  */
 
-/* -- featured article -- */
-
-.article-featured {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2em;
-    border-bottom: 1px #707070 solid;
+.article-title {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
 }
 
 .article-image {
-    order: -1;
+    margin-bottom: 2em;
 }
 
-.article-featured .article-info {
-    order: 0;
+.article-body,
+.article-info {
+    font-weight: 300;
 }
 
-.article-featured .article-title {
-    order: 1;
+.article-info,
+.article-read-more {
+    font-size: 0.875rem;
 }
 
-.article-featured .article-body {
-    order: 2;
-}
-
-.article-featured .article-read-more {
-    order: 3;
-}
-
+.article-read-more,
 .article-featured-body-link {
     color: #1792D2;
 }
 
-/* -- recent article  -- */
+.article-read-more {
+    font-weight: 700;
+    text-decoration: none;
+}
 
-.article-recent {
+
+/* =================
+LAYOUT
+================= */
+
+header {
+    text-align: center;
+    background-color: #F8F8F8;
+    margin: 0 0 3em 0;
+    padding-bottom: 2em;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-flex {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2em;
+}
+
+/* article layout styles */
+.article-featured,
+.article-recent {
+    padding-bottom:  2em;
+    border-bottom: 1px #707070 solid;
+}
+
+.article-recent:last-child {
+    border: none;
+}
+
+.article-image,
+.article-info {
+    order: -1;
+}
+
+.article-recent {
+    margin-top: 2em;
 }
 
 .article-recent-secondary {
     order: -1;
 }
 
-.article-recent-secondary .article-info {
-    margin: 1em 0 0 auto;
-    width: 200px;
+/* widget layout styles */
+
+.sidebar-widget {
+    border: 20px solid #E8E8E8;
+    padding: 2em;
 }
-.article-read-more {
-    margin-bottom: 2em;
+
+.widget-image {
+    object-fit: cover;
+    object-position: 30% 0;
+
+    width: 428px;
+height: 133px;
 }
 
 
-/* =================
-TYPOGRAPHY
-================= */
-h1 {
-    font-size: 2rem;
-    font-weight: 400;
-    margin: 0;
-}
 
-h1,h2,h3 {
-    font-family: 'Lora', serif;
-    color: #143774;
-}
 
-.subtitle {
-    font-weight: 700;
-    font-size: 0.75rem;
-    color: #1792D2;
-    margin-top: 0;
-}
-
-@media (max-width: 725px) {
-    .subtitle { 
-        margin-bottom: 2em;
-    }
-}
 
 
