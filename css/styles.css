@@ -60,6 +60,7 @@ h3 {
     font-size: 0.75rem;
     margin: 0 0 2em 0;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* Nav Typography*/
@@ -79,6 +80,7 @@ h3 {
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .nav-link:hover,
@@ -133,6 +135,7 @@ h3 {
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .article-read-more:hover,
