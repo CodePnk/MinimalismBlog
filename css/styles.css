@@ -227,13 +227,13 @@ header {
 
 footer {
     background-color: #143774;
+    color: rgba(255,255,255, .45);
     text-align: center;
     padding: 3em;
 }
 
 footer p {
     margin-bottom: 0;
-    color: #fff;
 }
 
 footer p:first-child {
